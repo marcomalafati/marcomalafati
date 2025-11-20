@@ -1,0 +1,6 @@
+module.exports = { reactStrictMode: true };
+meu-site-next/
+ ├─ package.json
+ ├─ next.config.js
+ └─ pages/
+      └─ index.js

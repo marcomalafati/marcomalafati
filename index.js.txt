@@ -1,0 +1,11 @@
+export default function Home() {
+  return (
+    <div style={{padding:'40px', fontFamily:'sans-serif'}}>
+      <h1>Guia Completo: Limpe Seu Nome e Aumente Seu Score</h1>
+      <p>Preço: R$ 29,90</p>
+      <p>Pagamento via PIX:</p>
+      <pre style={{background:'#eee', padding:'10px'}}>43ee9bf1-0d9b-45d8-9795-4afe40154a5c</pre>
+      <p>Após o pagamento, envie o comprovante no WhatsApp e receba o guia imediatamente.</p>
+    </div>
+  );
+}
