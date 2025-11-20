@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Limpeza de Nome - Pagamento PIX</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .box {
+        background: white;
+        padding: 35px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    button {
+        background: #00a859;
+        color: white;
+        border: none;
+        padding: 18px 28px;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background: #008f4d;
+    }
+
+    #msg {
+        margin-top: 20px;
+        font-size: 16px;
+        color: green;
+    }
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Guia Completo: Limpe Seu Nome e Aumente Seu Score</h1>
+        <h2>💵 Valor: R$ 29,90</h2>
+
+        <p>Clique no botão para copiar a chave PIX e realizar o pagamento.</p>
+
+        <button onclick="copyPix()">Copiar Chave PIX</button>
+
+        <p id="msg"></p>
+    </div>
+
+<script>
+function copyPix() {
+    const pixKey = "43ee9bf1-0d9b-45d8-9795-4afe40154a5c";
+    navigator.clipboard.writeText(pixKey);
+    document.getElementById("msg").innerText = "Chave PIX copiada com sucesso!";
+}
+</script>
+
+</body>
+</html>
